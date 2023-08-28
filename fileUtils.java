@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class fileUtils {
+public class FileUtils {
     public String readFile(File fileName) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
         StringBuilder string = new StringBuilder();
@@ -17,7 +17,7 @@ public class fileUtils {
     }
 
     public void writeFile(String str, String path) throws FileNotFoundException {
-        //creates a file from file path parameter
+        // creates a file from file path parameter
         File file = new File(path);
         PrintWriter pw = new PrintWriter(file);
         pw.write(str);
