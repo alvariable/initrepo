@@ -24,6 +24,7 @@ public class FileUtils {
         pw.close();
 
     }
+
     public static int countCharacters(String fileName) throws IOException {
         int chars = 0;
         BufferedReader charRead = new BufferedReader(new FileReader(fileName));
@@ -34,5 +35,5 @@ public class FileUtils {
         charRead.close();
         return chars;
     }
-    
+
 }
